@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+	<title>TryingToFindYourArtist</title>
+	<!--button type="button" id="refreshbtn">Search for your Artist</button-->
+	<link rel="stylesheet" href="./styleWEB.css">
+	<script src="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="./code.js"></script>
+	
+
+</head>
+
+<body id="bodyHTML">
+	
+	<div class="container" id="page-container">
+            <h1>
+				TryingToFindYourArtists
+            </h1>
+
+            <h2>
+                This app will use an API at eventfinda.co.nz to search for your specified artist and then return a list of links of artists that "eventfinda.co.nz" have
+            </h2>
+
+            <div id="btn-wrapper">
+				<input id="my-text" type="text" placeholder="Enter an Artist">
+                <button type="button" id="refreshbtn" onclick="sendRequest()"> Search for your Artist </button>
+            </div>
+			
+    </div>
+	
+	<div id="message">If prompted for Username and password, use these:<br><br>Username: tryingtofindyourevent<br>Password: q4b4m5kxk95w</div>
+	
+	 <div id="ArtistList"></div>
+
+	 
+	
+</body>
+
+<footer>
+
+<!--p> Like and share us on social media
+
+	<image src="FBPhoto.jpg" alt="logo" float=right height= width=>
+	</image>
+	<image src="TWITTERphoto.jpg" alt="logo" float=right height= width=>
+	</image>
+	<image src="TUMBLRphoto.jpg" alt="logo" float=right height= width=>
+	</image>
+
+</p-->
+
+</footer>
+</html>
