@@ -15,6 +15,9 @@ function sendData(file, callback) {
                         data += "<li><a href='" + json.artists[i].url + "'  target='_blank' >" + json.artists[i].name + "</a></li><br>";
                     }
                     document.getElementById("ArtistList").innerHTML = data + "<br>";
+                    if (!json.artists.length) {
+                        document.getElementById("ArtistList").innerHTML = "No Artists Found" + "<br>";
+                    }
                 }
                 catch (e) {
                     document.getElementById("ArtistList").innerHTML = "No Artists Found" + "<br>";
