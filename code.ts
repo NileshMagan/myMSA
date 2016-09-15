@@ -1,4 +1,4 @@
-function sendRequest(file, callback): void {
+function sendData(file, callback): void {
 	
     var searchedArtist: string = document.getElementById("my-text").value;
     if (searchedArtist != "") {

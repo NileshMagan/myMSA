@@ -1,4 +1,4 @@
-function sendRequest(file, callback) {
+function sendData(file, callback) {
     var searchedArtist = document.getElementById("my-text").value;
     if (searchedArtist != "") {
         $.ajax({
