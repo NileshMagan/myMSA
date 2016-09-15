@@ -12,13 +12,18 @@ function sendData(file, callback): void {
             success: function (json) { 	
                 var data: string = "";
                 try {
-					
+					if(!json.artists.length) {document.getElementById("ArtistList").innerHTML = "No Artists Found" + "<br>";}
+                    else {
                     for (var i: number = 0; i < json.artists.length; i++) {
-                        data += "<li><a href='" + json.artists[i].url + "'  target='_blank' >" + json.artists[i].name + "</a></li><br>";
+                        /*data += "<li><a href='" + json.artists[i].url + "'  target='_blank' >" + json.artists[i].name + " &nbsp;&nbsp;&nbsp;&nbsp </a></li>";*/
+                        data += "<div id='same'><a href='" + json.artists[i].url + "'  target='_blank' >" + json.artists[i].name + "</a></div>";
                     }
-                    document.getElementById("ArtistList").innerHTML = data + "<br>";
+                    document.getElementById("ArtistList").innerHTML = "<p id='fancy'>Below is a list of " + json.artists.length + " links:</p>" + data + "<br>";
 
-                     if(!json.artists.length) {document.getElementById("ArtistList").innerHTML = "No Artists Found" + "<br>";}
+                    document.getElementById("ArtistList").style.padding = "9px";
+                    
+                    }
+
                 }
                 catch (e) {
                     document.getElementById("ArtistList").innerHTML = "No Artists Found" + "<br>";
