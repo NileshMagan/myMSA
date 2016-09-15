@@ -12,7 +12,7 @@ function sendData(file, callback) {
                 var data = "";
                 try {
                     for (var i = 0; i < json.artists.length; i++) {
-                        data += "<li><a href='" + json.artists[i].url + "  target='_blank' >" + json.artists[i].name + "</a></li><br>";
+                        data += "<li><a href='" + json.artists[i].url + "'  target='_blank' >" + json.artists[i].name + "</a></li><br>";
                     }
                     document.getElementById("ArtistList").innerHTML = data + "<br>";
                 }

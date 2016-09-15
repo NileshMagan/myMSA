@@ -14,7 +14,7 @@ function sendData(file, callback): void {
                 try {
 					
                     for (var i: number = 0; i < json.artists.length; i++) {
-                        data += "<li><a href='" + json.artists[i].url + "  target='_blank' >" + json.artists[i].name + "</a></li><br>";
+                        data += "<li><a href='" + json.artists[i].url + "'  target='_blank' >" + json.artists[i].name + "</a></li><br>";
                     }
                     document.getElementById("ArtistList").innerHTML = data + "<br>";
                 }
