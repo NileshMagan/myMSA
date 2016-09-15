@@ -25,11 +25,11 @@ body#bodyHTML{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-button #myButton {
+button#myButton {
     background-color: purple;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 10px;*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -41,7 +41,7 @@ button #myButton {
     cursor: pointer;
 }
 
-button #button:hover {
+button#myButton:hover {
     background-color: white;
     color: purple;
 }
@@ -49,14 +49,19 @@ button #button:hover {
 h2 {
     padding-top:20px;
     padding-bottom:20px;
+	padding-right:20px;
+	padding-left:20px;
 	
-	color: black;
+	color: white;
 	/*mix-blend-mode: same;*/
 	/*color: inherit;*/
 	/*opacity: 0.6;*/
 	/*border-bottom: 1px;
 	border-bottom-style: solid;
 	border-bottom-color*/
+	background-color: purple;
+	opacity: 0.5;
+
 }
 
 body #page-container {
